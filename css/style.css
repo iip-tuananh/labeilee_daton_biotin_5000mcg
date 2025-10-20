@@ -1,0 +1,2520 @@
+:root {
+	--primary-color: #000;
+	--secondary-color: #fff;
+	--tertiary-color: #000000;
+	--quaternary-color: #ffffff;
+	--quinary-color: #000000;
+	--senary-color: #ffffff;
+	--septenary-color: #000000;
+	--octonary-color: #ffffff;
+	--nonary-color: #000000;
+	--denary-color: #ffffff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	font-style: normal;
+	src: url(//bizweb.dktcdn.net/100/495/928/themes/921279/assets/gilroy_regular.otf?1742461447222)
+		format('opentype');
+}
+@font-face {
+	font-family: 'SVN-Gilroy Medium';
+	font-style: normal;
+	src: url(/fonts/SVN-Gilroy\ Medium.otf) format('opentype');
+}
+@font-face {
+	font-family: 'SVN-Gilroy Bold';
+	font-style: normal;
+	src: url(/fonts/SVN-Gilroy\ Bold.otf) format('opentype');
+}
+@font-face {
+	font-family: 'SVN-Gilroy SemiBold';
+	font-style: normal;
+	src: url(/fonts/SVN-Gilroy\ SemiBold.otf) format('opentype');
+}
+@font-face {
+	font-family: 'SVN-Gilroy Regular';
+	font-style: normal;
+	src: url(/fonts/SVN-Gilroy\ Regular.otf) format('opentype');
+}
+@font-face {
+	font-family: 'SVN-Gilroy Italic';
+	font-style: normal;
+	src: url(/fonts/SVN-Gilroy\ Italic.otf) format('opentype');
+}
+
+@font-face {
+	font-family: 'BeautiqueDisplay-Medium';
+	font-style: normal;
+	src: url(/fonts/BeautiqueDisplay-Medium.otf) format('opentype');
+}
+@font-face {
+	font-family: 'BeautiqueDisplay-Regular';
+	font-style: normal;
+	src: url(/fonts/BeautiqueDisplay-Regular.otf) format('opentype');
+}
+@font-face {
+	font-family: 'BeautiqueDisplay-Light';
+	font-style: normal;
+	src: url(/fonts/BeautiqueDisplay-Light.otf) format('opentype');
+}
+@font-face {
+	font-family: 'BeautiqueDisplay-Bold';
+	font-style: normal;
+	src: url(/fonts/BeautiqueDisplay-Bold.otf) format('opentype');
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	/* background-color: var(--primary-color); */
+	background-color: var(--secondary-color);
+}
+
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+@media (min-width: 1560px) {
+	.container,
+	.container-lg,
+	.container-md,
+	.container-sm,
+	.container-xl,
+	.container-xxl {
+		max-width: 1560px !important;
+	}
+}
+
+/* Header */
+.body-default-wrapper .header {
+	background-color: var(--secondary-color);
+	padding: 20px 0;
+	border-bottom: 1px solid #e6e6ef;
+}
+
+.body-default-wrapper .header .header-menu {
+	display: flex;
+	justify-content: center;
+}
+
+.body-default-wrapper .header .header-menu ul {
+	display: flex;
+	gap: 48px;
+	align-items: center;
+	list-style: none;
+	margin-bottom: 0;
+}
+
+.body-default-wrapper .header .header-menu ul li a {
+	text-decoration: none;
+	color: var(--primary-color);
+	font-family: 'SVN-Gilroy Bold';
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.35;
+}
+
+/* Banner */
+.body-default-wrapper .banner {
+	overflow: hidden;
+	position: relative;
+}
+
+.body-default-wrapper .banner .banner-image {
+	width: 100%;
+	height: auto;
+}
+
+/* Problem */
+.body-default-wrapper .problem {
+	background-color: var(--secondary-color);
+	padding: 20px 0;
+	padding-top: 91px;
+	position: relative;
+}
+
+.body-default-wrapper .problem .sub-problem {
+	position: absolute;
+	top: -46px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	background: linear-gradient(90deg, #71452a 0%, #b67f44 100%);
+	padding: 16px 40px;
+	border-radius: 59px;
+	width: 698px;
+}
+
+.body-default-wrapper .problem .sub-problem .btn-action {
+	color: var(--secondary-color);
+	font-family: 'SVN-Gilroy Regular';
+	font-size: 26px;
+	font-weight: 600;
+	line-height: 31px;
+	text-decoration: none;
+}
+
+.body-default-wrapper .problem .problem-content {
+	padding: 0 180px;
+}
+
+@media (max-width: 1560px) {
+	.body-default-wrapper .problem .problem-content {
+		padding: 0 100px !important;
+	}
+}
+
+@media (max-width: 1400px) {
+	.body-default-wrapper .problem .problem-content {
+		padding: 0 !important;
+	}
+}
+
+.body-default-wrapper .problem .problem-content .title-text {
+	font-family: 'SVN-Gilroy Bold';
+	font-size: 64px;
+	font-weight: 700;
+	line-height: 1.2;
+	text-align: center;
+	letter-spacing: 0;
+	margin-bottom: 40px;
+
+	/* Gradient cho text */
+	background: linear-gradient(90deg, #71452a 0%, #b67f44 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* Dành cho trình duyệt hỗ trợ chuẩn */
+	background-clip: text;
+	color: transparent;
+}
+
+.body-default-wrapper .problem .problem-content .problem-item {
+	padding: 30px 31px;
+	background: var(--secondary-color);
+	border-radius: 40px;
+	transition: all 0.3s ease;
+	text-align: center;
+	position: relative;
+	height: 342px;
+	width: 351px;
+	margin-bottom: 30px;
+}
+
+@media (max-width: 1200px) {
+	.body-default-wrapper .problem .problem-content .problem-item {
+		width: 300px !important;
+	}
+}
+
+.body-default-wrapper .problem .problem-content .problem-item::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	border-radius: 40px;
+	padding: 2px; /* độ dày viền */
+	background: linear-gradient(to top, #71452a, #b67f44);
+	-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+	-webkit-mask-composite: xor;
+	mask-composite: exclude;
+	z-index: 1;
+}
+
+.body-default-wrapper .problem .problem-content .problem-item .problem-item-title {
+	font-family: 'SVN-Gilroy Regular';
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 25px;
+	text-align: center;
+	letter-spacing: 0;
+	height: 75px;
+	padding-top: 20px;
+}
+
+.body-default-wrapper .problem .problem-content .sub-title-text {
+	font-family: 'SVN-Gilroy Bold';
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 1.2;
+	text-align: center;
+	letter-spacing: 0;
+	margin-bottom: 30px;
+
+	/* Gradient cho text */
+	background: linear-gradient(90deg, #71452a 0%, #b67f44 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* Dành cho trình duyệt hỗ trợ chuẩn */
+	background-clip: text;
+	color: transparent;
+}
+
+.body-default-wrapper .problem .problem-content .sub-title-text-content {
+	text-align: center;
+	background: linear-gradient(90deg, #71452a 0%, #b67f44 100%);
+	padding: 16px 40px;
+	border-radius: 59px;
+	width: 615px;
+	margin: 0 auto;
+}
+
+.body-default-wrapper .problem .problem-content .sub-title-text-content .btn-action {
+	color: var(--secondary-color);
+	font-family: 'SVN-Gilroy Regular';
+	font-size: 26px;
+	font-weight: 600;
+	line-height: 31px;
+	text-decoration: none;
+}
+
+/* Banner sale */
+.body-default-wrapper .banner-sale {
+	background-color: var(--secondary-color);
+	padding-top: 400px;
+	position: relative;
+	margin-top: 40px;
+}
+
+@media (max-width: 1560px) {
+	.body-default-wrapper .banner-sale {
+		padding-top: 300px !important;
+	}
+}
+
+@media (max-width: 1400px) {
+	.body-default-wrapper .banner-sale {
+		padding-top: 250px !important;
+	}
+}
+
+@media (max-width: 1200px) {
+	.body-default-wrapper .banner-sale {
+		padding-top: 200px !important;
+	}
+}
+
+.body-default-wrapper .banner-sale .banner-sale-image {
+	/* width: 100%; */
+	height: auto;
+	position: absolute;
+	top: 0;
+	left: 50px;
+	right: 50px;
+}
+
+.body-default-wrapper .banner-sale .banner-sale-image img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.body-default-wrapper .banner-sale .banner-sale-content {
+	width: 100%;
+}
+
+.body-default-wrapper .banner-sale .banner-sale-content img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+/* Solution */
+.body-default-wrapper .solution {
+	padding: 20px 0;
+	padding-top: 50px;
+	position: relative;
+	overflow: hidden; /* để ảnh tràn không lấn ra ngoài */
+	z-index: 1;
+	background: url('/images/solution/solution-bg1.png') no-repeat left -12px top 298px,
+		url('/images/solution/solution-bg2.png') no-repeat left 1154px top 780px;
+}
+
+@media (max-width: 1560px) {
+	.body-default-wrapper .solution {
+		background: url('/images/solution/solution-bg1.png') no-repeat left -90px top 298px,
+			url('/images/solution/solution-bg2.png') no-repeat left 1154px top 780px !important;
+	}
+}
+
+/* Elip mờ màu vàng */
+.body-default-wrapper .solution::before {
+	content: '';
+	position: absolute;
+	width: 742px;
+	height: 932px;
+	left: 1385px;
+	top: 600px;
+	background: rgba(253, 207, 34, 0.78); /* #FDCF22, opacity 78% */
+	filter: blur(329px);
+	border-radius: 50%;
+	z-index: -6;
+}
+/* Elip mờ màu vàng */
+.body-default-wrapper .solution::after {
+	content: '';
+	position: absolute;
+	width: 442px;
+	height: 932px;
+	left: -12px;
+	top: 498px;
+	background: rgba(253, 207, 34, 0.78); /* #FDCF22, opacity 78% */
+	filter: blur(329px);
+	border-radius: 50%;
+	z-index: -1;
+}
+
+@media (max-width: 1560px) {
+	.body-default-wrapper .solution::after {
+		/* width: 342px !important; */
+	}
+}
+
+.body-default-wrapper .solution .title-text {
+	font-family: 'SVN-Gilroy Bold';
+	font-size: 64px;
+	font-weight: 700;
+	line-height: 1.2;
+	text-align: center;
+	letter-spacing: 0;
+	margin-bottom: 40px;
+
+	/* Gradient cho text */
+	background: linear-gradient(90deg, #b67f44 0%, #71452a 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* Dành cho trình duyợt hỗ trợ chuẩn */
+	background-clip: text;
+	color: transparent;
+}
+
+.body-default-wrapper .solution .list-solution-box {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 60px;
+}
+
+@media (max-width: 1560px) {
+	.body-default-wrapper .solution .list-solution-box {
+		gap: 30px !important;
+	}
+}
+
+@media (max-width: 1400px) {
+	.body-default-wrapper .solution .list-solution-box {
+		gap: 10px !important;
+	}
+}
+
+.body-default-wrapper .solution .list-solution-box .solution-item {
+	text-align: center;
+}
+
+.body-default-wrapper .solution .solution-item .solution-item-image {
+	width: 86px;
+	height: 86px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.body-default-wrapper .solution .solution-item .solution-item-title {
+	font-family: 'SVN-Gilroy SemiBold';
+	font-size: 26px;
+	font-weight: 600;
+	line-height: 31px;
+	text-align: center;
+	letter-spacing: 0;
+	height: 62px;
+}
+
+.body-default-wrapper .solution .solution-item .solution-item-description {
+	font-family: 'SVN-Gilroy Regular';
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 25px;
+	text-align: center;
+	letter-spacing: 0;
+}
+
+.body-default-wrapper .solution .solution-image {
+	padding: 0 180px;
+}
+
+.body-default-wrapper .solution .solution-image .title-text {
+	font-family: 'SVN-Gilroy SemiBold';
+	font-size: 64px;
+	font-weight: 600;
+	line-height: 1.2;
+	text-align: center;
+	letter-spacing: 0;
+	background: var(--primary-color);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* Dành cho trình duyợt hỗ trợ chuẩn */
+	background-clip: text;
+	color: transparent;
+	margin-bottom: 0;
+	margin-top: 80px;
+}
+
+.body-default-wrapper .solution .solution-image .solution-image-content {
+	position: relative;
+}
+
+.body-default-wrapper
+	.solution
+	.solution-image
+	.solution-image-content
+	.solution-image-description {
+	font-family: 'SVN-Gilroy Italic';
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 16px;
+	letter-spacing: 0;
+	position: absolute;
+	bottom: 60px;
+	right: 25px;
+	width: 446px;
+}
+@media (max-width: 1560px) {
+	.body-default-wrapper .solution .solution-image .solution-image-content .solution-image-description {
+		/* width: 342px !important; */
+		bottom: 38px !important;
+		right: -64px !important;
+	}
+}
+
+@media (max-width: 1400px) {
+	.body-default-wrapper .solution .solution-image .solution-image-content .solution-image-description {
+		bottom: 15px !important;
+		right: -45px !important;
+		width: 342px !important;
+	}
+}
+
+.body-default-wrapper .solution .solution-image .solution-image-button {
+	text-align: center;
+	background: linear-gradient(90deg, #71452a 0%, #b67f44 100%);
+	padding: 16px 40px;
+	border-radius: 59px;
+	width: 700px;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+.body-default-wrapper .solution .solution-image .solution-image-button .btn-action {
+	color: var(--secondary-color);
+	font-family: 'SVN-Gilroy Regular';
+	font-size: 26px;
+	font-weight: 600;
+	line-height: 31px;
+	text-decoration: none;
+}
+
+/* Course */
+.body-default-wrapper .course {
+	padding: 20px 0;
+	padding-top: 50px;
+	position: relative;
+	overflow: hidden; /* để ảnh tràn không lấn ra ngoài */
+	z-index: 1;
+	background: url('/images/course/MOL\ 2.1\ 1.png') no-repeat left 0 top 498px;
+}
+
+/* Ảnh thứ 2 xoay nhẹ */
+.body-default-wrapper .course::before {
+	content: '';
+	position: absolute;
+	top: 850px;
+	right: -35px;
+	width: 434.41px; /* tuỳ chỉnh theo kích thước ảnh thật */
+	height: 289.99px;
+	background: url('/images/course/MOL 1.1 1.png') no-repeat center / contain;
+	transform: rotate(-1.92deg);
+	z-index: -1;
+}
+
+.body-default-wrapper .course .title-text {
+	font-family: 'SVN-Gilroy Bold';
+	font-size: 64px;
+	font-weight: 700;
+	line-height: 1.2;
+	text-align: center;
+	letter-spacing: 0;
+	background: var(--primary-color);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* Dành cho trình duyợt hỗ trợ chuẩn */
+	background-clip: text;
+	color: transparent;
+	margin-bottom: 40px;
+	margin-top: 80px;
+}
+
+.body-default-wrapper .course .title-text span {
+	font-family: 'SVN-Gilroy SemiBold';
+	font-size: 64px;
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+.body-default-wrapper .course .course-content {
+	padding: 0 180px;
+}
+
+@media (max-width: 1560px) {
+	.body-default-wrapper .course .course-content {
+		padding: 0 100px !important;
+	}
+}
+
+@media (max-width: 1400px) {
+	.body-default-wrapper .course .course-content {
+		padding: 0 !important;
+	}
+}
+
+.body-default-wrapper .course .course-content .course-item {
+	display: flex;
+	gap: 40px;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.body-default-wrapper .course .course-content .course-item-description {
+	font-family: 'SVN-Gilroy Italic';
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 16px;
+	letter-spacing: 0;
+}
+
+.body-default-wrapper .course .course-content-button {
+	text-align: center;
+	background: linear-gradient(90deg, #71452a 0%, #b67f44 100%);
+	padding: 16px 40px;
+	border-radius: 59px;
+	width: 500px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.body-default-wrapper .course .course-content-button .btn-action {
+	color: var(--secondary-color);
+	font-family: 'SVN-Gilroy Regular';
+	font-size: 26px;
+	font-weight: 600;
+	line-height: 31px;
+	text-decoration: none;
+}
+
+/* Feedback */
+.body-default-wrapper .feedback {
+	padding: 20px 0;
+	padding-top: 40px;
+	position: relative;
+	overflow: hidden; /* để ảnh tràn không lấn ra ngoài */
+	z-index: 1;
+}
+
+.body-default-wrapper .feedback .title-text {
+	font-family: 'SVN-Gilroy Bold';
+	font-size: 64px;
+	font-weight: 700;
+	line-height: 1.2;
+	text-align: center;
+	letter-spacing: 0;
+	background: var(--primary-color);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* Dành cho trình duyợt hỗ trợ chuẩn */
+	background-clip: text;
+	color: transparent;
+}
+
+.body-default-wrapper .feedback .feedback-content {
+	padding-top: 30px;
+}
+
+.body-default-wrapper .feedback .feedback-content .feedback-item {
+	padding: 39px 31px;
+	/* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+	border-radius: 59px;
+	width: 742px;
+	cursor: pointer;
+}
+
+@media (max-width: 1560px) {
+	.body-default-wrapper .feedback .feedback-content .feedback-item {
+		width: 100% !important;
+	}
+}
+
+@media (max-width: 1400px) {
+	.body-default-wrapper .feedback .feedback-content .feedback-item {
+		width: 100% !important;
+	}
+}
+
+.body-default-wrapper .feedback .feedback-content .feedback-item:hover {
+	/* transform: translateY(-10px);
+	transition: all 0.3s ease; */
+	background: linear-gradient(to bottom, #fdcf22 0%, #ffffff 100%);
+}
+
+.body-default-wrapper .feedback .feedback-content .feedback-item-content {
+	padding: 20px 25px 0 25px;
+}
+
+.body-default-wrapper .feedback .feedback-content .feedback-item-content .feedback-item-title {
+	font-family: 'SVN-Gilroy SemiBold';
+	font-size: 36px;
+	font-weight: 600;
+	line-height: 31px;
+	text-align: center;
+	letter-spacing: 0;
+	margin-bottom: 20px;
+	margin-top: 6px;
+}
+
+.body-default-wrapper
+	.feedback
+	.feedback-content
+	.feedback-item-content
+	.feedback-item-description {
+	font-family: 'SVN-Gilroy Regular';
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 25px;
+	letter-spacing: 0;
+	color: var(--primary-color);
+	text-align: justify;
+}
+
+.body-default-wrapper .feedback .feedback-content .feedback-phone-item {
+	padding: 0 25px;
+}
+
+.body-default-wrapper .feedback .feedback-button {
+	text-align: center;
+	background: linear-gradient(90deg, #71452a 0%, #b67f44 100%);
+	padding: 16px 40px;
+	border-radius: 59px;
+	width: 619px;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+.body-default-wrapper .feedback .feedback-button .btn-action {
+	color: var(--secondary-color);
+	font-family: 'SVN-Gilroy Regular';
+	font-size: 26px;
+	font-weight: 600;
+	line-height: 31px;
+	text-decoration: none;
+}
+
+/* Quality */
+.body-default-wrapper .quality {
+	padding-top: 40px;
+	padding-bottom: 0;
+	position: relative;
+	overflow: hidden; /* để ảnh tràn không lấn ra ngoài */
+	z-index: 1;
+}
+
+.body-default-wrapper .quality::before {
+	content: '';
+	position: absolute;
+	height: 348px;
+	max-width: 100%;
+	left: 60px;
+	right: 60px;
+	bottom: 0;
+	background: url('/images/quality/pc-quality-bg.png') no-repeat;
+	z-index: -1;
+	border-top-right-radius: 59px;
+}
+.body-default-wrapper .quality .title-text {
+	font-family: 'SVN-Gilroy Bold';
+	font-size: 64px;
+	font-weight: 700;
+	line-height: 1.2;
+	text-align: center;
+	letter-spacing: 0;
+	background: var(--primary-color);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* Dành cho trình duyợt hỗ trợ chuẩn */
+	background-clip: text;
+	color: transparent;
+}
+
+.body-default-wrapper .quality .quality-content {
+	padding-top: 30px;
+}
+
+.body-default-wrapper .quality .quality-content .quality-item {
+	position: relative;
+	height: 488px;
+	width: 347px;
+	margin: 0 auto;
+}
+
+@media (max-width: 1560px) {
+	.body-default-wrapper .quality .quality-content .quality-item {
+		width: 100% !important;
+	}
+}
+
+@media (max-width: 1400px) {
+	.body-default-wrapper .quality .quality-content .quality-item {
+		width: 100% !important;
+	}
+}
+
+.body-default-wrapper .quality .quality-content .quality-item img {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+.body-default-wrapper .quality .background-quality-button {
+	background: linear-gradient(to bottom, #ececec 0%, #ffffff 100%);
+	padding: 40px;
+}
+
+.body-default-wrapper .quality .background-quality-button .quality-button {
+	text-align: center;
+	background: linear-gradient(90deg, #71452a 0%, #b67f44 100%);
+	padding: 16px 40px;
+	border-radius: 59px;
+	width: 619px;
+	margin: 0 auto;
+}
+
+.body-default-wrapper .quality .background-quality-button .quality-button .btn-action {
+	color: var(--secondary-color);
+	font-family: 'SVN-Gilroy Regular';
+	font-size: 26px;
+	font-weight: 600;
+	line-height: 31px;
+	text-decoration: none;
+}
+/* Product */
+.body-default-wrapper .product {
+	padding-top: 20px;
+	padding-bottom: 40px;
+	position: relative;
+	overflow: hidden; /* để ảnh tràn không lấn ra ngoài */
+	z-index: 1;
+	background-color: var(--secondary-color);
+}
+
+.body-default-wrapper .product .title-text {
+	font-family: 'SVN-Gilroy Bold';
+	font-size: 64px;
+	font-weight: 700;
+	line-height: 1.2;
+	text-align: center;
+	letter-spacing: 0;
+	background: var(--primary-color);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* Dành cho trình duyợt hỗ trợ chuẩn */
+	background-clip: text;
+	color: transparent;
+}
+
+.body-default-wrapper .product .product-content .product-item-special {
+	position: relative;
+	height: 100%;
+}
+
+.body-default-wrapper .product .product-content .product-item-special img {
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	right: 0;
+	top: -20px;
+	z-index: 1;
+	height: 718px;
+}
+
+
+@media (max-width: 1560px) {
+	.body-default-wrapper .product .product-content .product-item-special img {
+		height: 608px !important;
+	}
+}
+
+@media (max-width: 1400px) {
+	.body-default-wrapper .product .product-content .product-item-special img {
+		height: 524px !important;
+	}
+}
+
+@media (max-width: 1200px) {
+	.body-default-wrapper .product .product-content .product-item-special img {
+		height: 440px !important;
+	}
+}
+
+.body-default-wrapper .product .product-button {
+	text-align: center;
+	background: linear-gradient(90deg, #71452a 0%, #b67f44 100%);
+	padding: 16px 40px;
+	border-radius: 59px;
+	width: 644px;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+.body-default-wrapper .product .product-button .btn-action {
+	color: var(--secondary-color);
+	font-family: 'SVN-Gilroy Regular';
+	font-size: 26px;
+	font-weight: 600;
+	line-height: 31px;
+	text-decoration: none;
+}
+
+/* Register */
+.body-default-wrapper .register {
+	padding-top: 20px;
+	padding-bottom: 40px;
+	position: relative;
+	overflow: hidden; /* để ảnh tràn không lấn ra ngoài */
+	z-index: 1;
+}
+
+.body-default-wrapper .register .register-content {
+	background: linear-gradient(90deg, #f9c894 0%, #b67f44 50%, #71452a 100%);
+	padding: 40px 80px;
+	position: relative;
+	/* overflow: hidden; */
+	z-index: 1;
+	border-radius: 40px;
+	overflow: visible;
+}
+
+@media (max-width: 1560px) {
+	.body-default-wrapper .register .register-content {
+		padding: 40px 0 !important;
+	}
+}
+
+.body-default-wrapper .register .register-content::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 28%;
+	height: 100%;
+	background: url('/images/register/register-bg1.png') no-repeat center / cover;
+	z-index: -1;
+	border-top-left-radius: 40px;
+	border-bottom-left-radius: 40px;
+}
+
+.body-default-wrapper .register .register-content::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 28%;
+	height: 100%;
+	background: url('/images/register/register-bg2.png') no-repeat center / cover;
+	z-index: -1;
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px;
+}
+
+.body-default-wrapper .register .register-content .register-title-left {
+	font-family: 'SVN-Gilroy Bold';
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 57px;
+	text-align: center;
+	letter-spacing: 0;
+	color: var(--secondary-color);
+}
+
+.body-default-wrapper .register .register-content .register-title-left span {
+	text-transform: uppercase;
+}
+
+.body-default-wrapper .register .register-content .register-form {
+	padding-top: 30px;
+}
+
+.body-default-wrapper .register .register-content .register-form .form-group {
+	margin-bottom: 15px;
+}
+
+.body-default-wrapper .register .register-content .register-form .form-group input,
+.body-default-wrapper .register .register-content .register-form .form-group select,
+.body-default-wrapper .register .register-content .register-form .form-group .nice-select {
+	width: 100%;
+	height: 50px;
+	border-radius: 59px;
+	border: 1px solid #e6e6ef;
+	padding: 0 20px;
+}
+
+.body-default-wrapper .register .register-content .register-form .form-group select {
+	font-family: 'SVN-Gilroy Regular';
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 25px;
+	letter-spacing: 0;
+	padding-right: 40px;
+}
+
+.body-default-wrapper .register .register-content .register-form .form-group select option {
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
+	font-family: 'SVN-Gilroy Regular';
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 25px;
+	letter-spacing: 0;
+}
+
+.body-default-wrapper .register .register-content .register-form .form-group input::placeholder {
+	font-family: 'SVN-Gilroy Regular';
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 25px;
+	letter-spacing: 0;
+	color: #727272;
+}
+
+.body-default-wrapper .register .register-content .register-form .btn-register {
+	text-align: center;
+	background: linear-gradient(90deg, #71452a 0%, #b67f44 100%);
+	padding: 16px 40px;
+	border-radius: 59px;
+	width: 310px;
+	margin: 0 auto;
+	display: block;
+	border: none;
+}
+
+.body-default-wrapper .register .register-content .register-form .btn-register .btn-action {
+	color: var(--secondary-color);
+	font-family: 'SVN-Gilroy Regular';
+	font-size: 26px;
+	font-weight: 600;
+	line-height: 31px;
+}
+
+.body-default-wrapper .register .register-content .register-title-right {
+	font-family: 'SVN-Gilroy Bold';
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 57px;
+	text-align: center;
+	letter-spacing: 0;
+	color: var(--secondary-color);
+	text-transform: uppercase;
+	margin-top: 80px;
+}
+
+.body-default-wrapper .register .register-content .register-time {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+
+.body-default-wrapper .register .register-content .register-time .register-time-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.body-default-wrapper .register .register-content .register-time .register-time-item-title-number {
+	padding: 45px 50px;
+	background-color: var(--secondary-color);
+	border-radius: 19px;
+	box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
+	width: 182px;
+	text-align: center;
+}
+
+@media (max-width: 1400px) {
+	.body-default-wrapper .register .register-content .register-time .register-time-item-title-number {
+		width: 145px !important;
+		padding: 35px 30px !important;
+	}
+}
+
+.body-default-wrapper
+	.register
+	.register-content
+	.register-time
+	.register-time-item-title-number
+	span {
+	font-family: 'SVN-Gilroy Bold';
+	font-size: 64px;
+	font-weight: 700;
+	line-height: 1.2;
+	text-align: center;
+	letter-spacing: 0;
+
+	/* Gradient cho text */
+	background: linear-gradient(360deg, #d78350 0%, #71452a 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* Dành cho trình duyợt hỗ trợ chuẩn */
+	background-clip: text;
+	color: transparent;
+}
+
+.body-default-wrapper .register .register-content .register-time .register-time-item-title-text {
+	font-family: 'SVN-Gilroy Regular';
+	font-size: 26px;
+	font-weight: 400;
+	line-height: 57px;
+	letter-spacing: 0;
+	color: var(--secondary-color);
+}
+
+/* QA */
+.body-default-wrapper .qa {
+	padding-top: 20px;
+	padding-bottom: 60px;
+	position: relative;
+	overflow: hidden; /* để ảnh tràn không lấn ra ngoài */
+	z-index: 1;
+}
+
+.body-default-wrapper .qa .title-text {
+	font-family: 'SVN-Gilroy Bold';
+	font-size: 64px;
+	font-weight: 700;
+	line-height: 1.2;
+	text-align: center;
+	letter-spacing: 0;
+	background: var(--primary-color);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* Dành cho trình duyợt hỗ trợ chuẩn */
+	background-clip: text;
+	color: transparent;
+	margin-bottom: 40px;
+}
+
+/* Footer */
+.body-default-wrapper .footer {
+	padding-top: 20px;
+	/* padding-bottom: 40px; */
+	position: relative;
+	overflow: hidden; /* để ảnh tràn không lấn ra ngoài */
+	z-index: 1;
+	background-color: #242421;
+	border-top-right-radius: 40px;
+	border-top-left-radius: 40px;
+	color: var(--secondary-color);
+}
+
+.body-default-wrapper .footer .footer-content {
+	padding: 40px 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	gap: 40px;
+}
+
+.body-default-wrapper .footer .footer-left {
+	width: 85%;
+}
+
+.body-default-wrapper .footer .footer-left .footer-left-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	gap: 40px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #ffffff;
+}
+
+.body-default-wrapper .footer .footer-left .footer-left-content .footer-info-logo img {
+	width: auto;
+	height: auto;
+}
+
+.body-default-wrapper .footer .footer-left .footer-left-content .footer-info-content {
+	font-family: 'SVN-Gilroy Medium';
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.2;
+	letter-spacing: 0;
+}
+
+.body-default-wrapper .footer .footer-left .footer-left-content .footer-info-content-title {
+	font-family: 'SVN-Gilroy SemiBold';
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 1.2;
+	letter-spacing: 0;
+	margin-bottom: 20px;
+	margin-top: 30px;
+}
+
+.body-default-wrapper .footer .footer-left .footer-contact .footer-contact-title {
+	font-family: 'SVN-Gilroy SemiBold';
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 1.2;
+	letter-spacing: 0;
+	margin-bottom: 20px;
+}
+
+.body-default-wrapper .footer .footer-left .footer-contact .footer-contact-content {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.body-default-wrapper
+	.footer
+	.footer-left
+	.footer-contact
+	.footer-contact-content
+	.footer-contact-content-item {
+	font-family: 'SVN-Gilroy Medium';
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1;
+	letter-spacing: 0;
+	color: #969696;
+}
+
+.body-default-wrapper .footer .footer-left .footer-contact .footer-contact-social {
+	display: flex;
+	gap: 13px;
+	margin-top: 20px;
+}
+
+.body-default-wrapper .footer .footer-left .footer-bottom {
+	margin-top: 25px;
+}
+
+.body-default-wrapper .footer .footer-left .footer-bottom .footer-bottom-content {
+	display: flex;
+	justify-content: space-between;
+	gap: 60px;
+}
+
+.body-default-wrapper
+	.footer
+	.footer-left
+	.footer-bottom
+	.footer-bottom-content
+	.footer-bottom-content-item {
+	font-family: 'SVN-Gilroy Medium';
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.2;
+	letter-spacing: 0;
+	color: #969696;
+}
+
+.body-default-wrapper .footer .footer-right {
+	width: 15%;
+}
+
+/* Mobile */
+
+.body-mobile-wrapper {
+	display: none;
+}
+@media (max-width: 1024px) {
+	.body-default-wrapper {
+		display: none;
+	}
+	.body-mobile-wrapper {
+		display: block;
+	}
+}
+
+.body-mobile-wrapper .header-mobile {
+	background-color: var(--secondary-color);
+	padding: 15px 0;
+	border-bottom: 1px solid #e6e6ef;
+}
+
+.body-mobile-wrapper .header-mobile .header-mobile-menu ul {
+	display: flex;
+	/* justify-content: center; */
+	align-items: center;
+	list-style: none;
+	margin-bottom: 0;
+	gap: 10px;
+	padding: 0;
+}
+
+/* Problem mobile*/
+.body-mobile-wrapper .problem {
+	background-color: var(--secondary-color);
+	padding: 20px 0;
+	padding-top: 60px;
+	position: relative;
+}
+
+.body-mobile-wrapper .problem .sub-problem {
+	position: absolute;
+	top: -22px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	background: linear-gradient(90deg, #71452a 0%, #b67f44 100%);
+	padding: 7px 33px;
+	border-radius: 59px;
+	width: 270px;
+}
+
+.body-mobile-wrapper .problem .sub-problem .btn-action {
+	color: var(--secondary-color);
+	font-family: 'SVN-Gilroy Regular';
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 16px;
+	text-decoration: none;
+}
+
+.body-mobile-wrapper .problem .problem-content {
+	padding: 0 30px;
+}
+
+.body-mobile-wrapper .problem .problem-content .title-text {
+	font-family: 'SVN-Gilroy Bold';
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.2;
+	text-align: center;
+	letter-spacing: 0;
+	margin-bottom: 20px;
+
+	/* Gradient cho text */
+	background: linear-gradient(90deg, #71452a 0%, #b67f44 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* Dành cho trình duyệt hỗ trợ chuẩn */
+	background-clip: text;
+	color: transparent;
+}
+
+.body-mobile-wrapper .problem .problem-content .problem-item {
+	/* padding: 13px; */
+	background: var(--secondary-color);
+	border-radius: 16px;
+	transition: all 0.3s ease;
+	text-align: center;
+	position: relative;
+	height: 161px;
+	width: 150px;
+	margin-bottom: 15px;
+}
+
+.body-mobile-wrapper .problem .problem-content .problem-item::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	border-radius: 16px;
+	padding: 2px; /* độ dày viền */
+	background: linear-gradient(to top, #71452a, #b67f44);
+	-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+	-webkit-mask-composite: xor;
+	mask-composite: exclude;
+	z-index: 1;
+}
+
+.body-mobile-wrapper .problem .problem-content .problem-item img {
+	padding: 13px 13px 8px 13px;
+}
+
+.body-mobile-wrapper .problem .problem-content .problem-item .problem-item-title {
+	font-family: 'SVN-Gilroy Regular';
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 15px;
+	text-align: center;
+	letter-spacing: 0;
+	height: 45px;
+	padding: 0 8px 10px 8px;
+}
+
+.body-mobile-wrapper .problem .problem-content .sub-title-text {
+	font-family: 'SVN-Gilroy Bold';
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 1.2;
+	text-align: center;
+	letter-spacing: 0;
+	margin-bottom: 20px;
+
+	/* Gradient cho text */
+	background: linear-gradient(90deg, #71452a 0%, #b67f44 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* Dành cho trình duyệt hỗ trợ chuẩn */
+	background-clip: text;
+	color: transparent;
+}
+
+.body-mobile-wrapper .problem .problem-content .sub-title-text-content {
+	text-align: center;
+	background: linear-gradient(90deg, #71452a 0%, #b67f44 100%);
+	padding: 7px 33px;
+	border-radius: 59px;
+	width: 255px;
+	margin: 0 auto;
+}
+
+.body-mobile-wrapper .problem .problem-content .sub-title-text-content .btn-action {
+	color: var(--secondary-color);
+	font-family: 'SVN-Gilroy Regular';
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 17px;
+	text-decoration: none;
+}
+
+/* Banner sale mobile */
+.body-mobile-wrapper .banner-sale {
+	background-color: var(--secondary-color);
+	padding-top: 430px;
+	position: relative;
+	margin-top: 20px;
+}
+
+.body-mobile-wrapper .banner-sale .banner-sale-image {
+	/* width: 100%; */
+	height: auto;
+	position: absolute;
+	top: 0;
+	left: 20px;
+	right: 20px;
+}
+
+.body-mobile-wrapper .banner-sale .banner-sale-image img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.body-mobile-wrapper .banner-sale .banner-sale-content {
+	width: 100%;
+}
+
+.body-mobile-wrapper .banner-sale .banner-sale-content img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+/* Solution */
+.body-mobile-wrapper .solution {
+	padding: 20px 0;
+	padding-bottom: 0;
+	position: relative;
+	overflow: hidden; /* để ảnh tràn không lấn ra ngoài */
+	z-index: 1;
+	background: url('/images/mobile/solution/solution-bg1.png') no-repeat left -12px top 498px,
+		url('/images/mobile/solution/solution-bg2.png') no-repeat right -12px top 580px;
+}
+
+.body-mobile-wrapper .solution .title-text {
+	font-family: 'SVN-Gilroy Bold';
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.2;
+	text-align: center;
+	letter-spacing: 0;
+	margin-bottom: 20px;
+
+	/* Gradient cho text */
+	background: linear-gradient(90deg, #b67f44 0%, #71452a 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* Dành cho trình duyợt hỗ trợ chuẩn */
+	background-clip: text;
+	color: transparent;
+}
+
+.body-mobile-wrapper .solution .list-solution-box {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 30px;
+}
+
+.body-mobile-wrapper .solution .list-solution-box .solution-item {
+	text-align: center;
+}
+
+.body-mobile-wrapper .solution .solution-item .solution-item-image {
+	width: 66px;
+	height: 66px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+.body-mobile-wrapper .solution .solution-item .solution-item-title {
+	font-family: 'SVN-Gilroy SemiBold';
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1;
+	text-align: center;
+	letter-spacing: 0;
+	height: 25px;
+}
+
+.body-mobile-wrapper .solution .solution-item .solution-item-description {
+	font-family: 'SVN-Gilroy Regular';
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 15px;
+	text-align: center;
+	letter-spacing: 0;
+}
+
+.body-mobile-wrapper .solution .solution-image {
+	/* padding: 0 30px; */
+	text-align: center;
+}
+
+.body-mobile-wrapper .solution .solution-image .title-text {
+	font-family: 'SVN-Gilroy SemiBold';
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.2;
+	text-align: center;
+	letter-spacing: 0;
+	background: var(--primary-color);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* Dành cho trình duyợt hỗ trợ chuẩn */
+	background-clip: text;
+	color: transparent;
+	margin-bottom: 0;
+	margin-top: 30px;
+}
+
+.body-mobile-wrapper .solution .solution-image .solution-image-content {
+	position: relative;
+}
+
+.body-mobile-wrapper .solution .solution-image .solution-image-content .solution-image-description {
+	font-family: 'SVN-Gilroy Italic';
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 16px;
+	letter-spacing: 0;
+	position: absolute;
+	bottom: 60px;
+	right: 0;
+	width: 446px;
+}
+
+.body-mobile-wrapper .solution .solution-image .solution-image-button {
+	text-align: center;
+	background: linear-gradient(90deg, #71452a 0%, #b67f44 100%);
+	padding: 7px 33px;
+	border-radius: 59px;
+	width: 273px;
+	margin: 0 auto;
+	/* margin-bottom: 30px; */
+}
+
+.body-mobile-wrapper .solution .solution-image .solution-image-button .btn-action {
+	color: var(--secondary-color);
+	font-family: 'SVN-Gilroy Regular';
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 17px;
+	text-decoration: none;
+}
+
+/* Course */
+.body-mobile-wrapper .course {
+	padding: 20px 0;
+	padding-bottom: 0;
+	position: relative;
+	overflow: hidden; /* để ảnh tràn không lấn ra ngoài */
+	z-index: 1;
+	/* background: url('/images/course/MOL\ 2.1\ 1.png') no-repeat left 0 top 498px; */
+}
+
+/* Ảnh thứ 2 xoay nhẹ */
+.body-mobile-wrapper .course::before {
+	content: '';
+	position: absolute;
+	top: 850px;
+	right: -35px;
+	width: 434.41px; /* tuỳ chỉnh theo kích thước ảnh thật */
+	height: 289.99px;
+	/* background: url('/images/course/MOL 1.1 1.png') no-repeat center / contain; */
+	transform: rotate(-1.92deg);
+	z-index: -1;
+}
+
+.body-mobile-wrapper .course .title-text {
+	font-family: 'SVN-Gilroy Bold';
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.2;
+	text-align: center;
+	letter-spacing: 0;
+	background: var(--primary-color);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* Dành cho trình duyợt hỗ trợ chuẩn */
+	background-clip: text;
+	color: transparent;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.body-mobile-wrapper .course .title-text span {
+	font-family: 'SVN-Gilroy SemiBold';
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+.body-mobile-wrapper .course .course-content {
+	/* padding: 0 20px; */
+}
+
+.body-mobile-wrapper .course .course-content .course-item {
+	/* display: flex; */
+	/* gap: 40px; */
+	/* align-items: center; */
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.body-mobile-wrapper .course .course-content .course-item-description {
+	font-family: 'SVN-Gilroy Italic';
+	font-size: 8px;
+	font-weight: 400;
+	line-height: 16px;
+	letter-spacing: 0;
+}
+
+.body-mobile-wrapper .course .course-content-button {
+	text-align: center;
+	background: linear-gradient(90deg, #71452a 0%, #b67f44 100%);
+	padding: 7px 33px;
+	border-radius: 59px;
+	width: 319px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.body-mobile-wrapper .course .course-content-button .btn-action {
+	color: var(--secondary-color);
+	font-family: 'SVN-Gilroy Regular';
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 31px;
+	text-decoration: none;
+}
+
+/* Feedback */
+.body-mobile-wrapper .feedback {
+	padding-bottom: 0;
+	padding-top: 30px;
+	position: relative;
+	overflow: hidden; /* để ảnh tràn không lấn ra ngoài */
+	z-index: 1;
+}
+
+.body-mobile-wrapper .feedback .title-text {
+	font-family: 'SVN-Gilroy Bold';
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.2;
+	text-align: center;
+	letter-spacing: 0;
+	background: var(--primary-color);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* Dành cho trình duyợt hỗ trợ chuẩn */
+	background-clip: text;
+	color: transparent;
+}
+
+.body-mobile-wrapper .feedback .feedback-content {
+	padding-top: 20px;
+	text-align: center;
+}
+
+.body-mobile-wrapper .feedback .feedback-content .feedback-item {
+	padding: 12px 23px;
+	/* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+	border-radius: 20px;
+	width: 90%;
+	cursor: pointer;
+	margin: 0 auto;
+}
+
+.body-mobile-wrapper .feedback .feedback-content .feedback-item:hover {
+	/* transform: translateY(-10px);
+	transition: all 0.3s ease; */
+	background: linear-gradient(to bottom, #fdcf22 0%, #ffffff 100%);
+}
+
+.body-mobile-wrapper .feedback .feedback-content .feedback-item-content {
+	padding: 10px 15px 0 15px;
+}
+
+.body-mobile-wrapper .feedback .feedback-content .feedback-item-content .feedback-item-title {
+	font-family: 'SVN-Gilroy SemiBold';
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 31px;
+	text-align: center;
+	letter-spacing: 0;
+	margin-bottom: 10px;
+	/* margin-top: 6px; */
+}
+
+.body-mobile-wrapper .feedback .feedback-content .feedback-item-content .feedback-item-description {
+	font-family: 'SVN-Gilroy Regular';
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 15px;
+	letter-spacing: 0;
+	color: var(--primary-color);
+	text-align: justify;
+}
+
+.body-mobile-wrapper .feedback .feedback-content .feedback-phone-item {
+	padding: 0 25px;
+}
+
+.body-mobile-wrapper .feedback .feedback-button {
+	text-align: center;
+	background: linear-gradient(90deg, #71452a 0%, #b67f44 100%);
+	padding: 7px 26px;
+	border-radius: 59px;
+	width: 315px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.body-mobile-wrapper .feedback .feedback-button .btn-action {
+	color: var(--secondary-color);
+	font-family: 'SVN-Gilroy Regular';
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 17px;
+	text-decoration: none;
+}
+
+/* Quality */
+.body-mobile-wrapper .quality {
+	padding-top: 30px;
+	padding-bottom: 0;
+	position: relative;
+	overflow: hidden; /* để ảnh tràn không lấn ra ngoài */
+	z-index: 1;
+}
+
+.body-mobile-wrapper .quality::before {
+	content: '';
+	position: absolute;
+	height: 297px;
+	width: 100%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url('/images/mobile/quality/quality-bg.png') no-repeat;
+	z-index: -1;
+}
+.body-mobile-wrapper .quality .title-text {
+	font-family: 'SVN-Gilroy Bold';
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.2;
+	text-align: center;
+	letter-spacing: 0;
+	background: var(--primary-color);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* Dành cho trình duyợt hỗ trợ chuẩn */
+	background-clip: text;
+	color: transparent;
+	margin-bottom: 0;
+}
+
+.body-mobile-wrapper .quality .quality-content {
+	/* padding-top: 30px; */
+}
+
+.body-mobile-wrapper .quality .quality-content .quality-item {
+	position: relative;
+	height: 250px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.body-mobile-wrapper .quality .quality-content .quality-item img {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+.body-mobile-wrapper .quality .background-quality-button {
+	background: linear-gradient(to bottom, #ececec 0%, #ffffff 100%);
+	padding-top: 20px;
+}
+
+.body-mobile-wrapper .quality .background-quality-button .quality-button {
+	text-align: center;
+	background: linear-gradient(90deg, #71452a 0%, #b67f44 100%);
+	padding: 7px 33px;
+	border-radius: 59px;
+	width: 323px;
+	height: 44px;
+	margin: 0 auto;
+}
+
+.body-mobile-wrapper .quality .background-quality-button .quality-button .btn-action {
+	color: var(--secondary-color);
+	font-family: 'SVN-Gilroy Regular';
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 31px;
+	text-decoration: none;
+}
+/* Product */
+.body-mobile-wrapper .product {
+	padding-top: 30px;
+	padding-bottom: 20px;
+	position: relative;
+	overflow: hidden; /* để ảnh tràn không lấn ra ngoài */
+	z-index: 1;
+	background-color: var(--secondary-color);
+}
+
+.body-mobile-wrapper .product .title-text {
+	font-family: 'SVN-Gilroy Bold';
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.2;
+	text-align: center;
+	letter-spacing: 0;
+	background: var(--primary-color);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* Dành cho trình duyợt hỗ trợ chuẩn */
+	background-clip: text;
+	color: transparent;
+}
+
+.body-mobile-wrapper .product .product-content .product-item-special {
+	position: relative;
+	height: 100%;
+}
+
+.body-mobile-wrapper .product .product-content .product-item-special img {
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	right: 0;
+	top: -20px;
+	z-index: 1;
+	height: 718px;
+}
+
+.body-mobile-wrapper .product .product-button {
+	text-align: center;
+	background: linear-gradient(90deg, #71452a 0%, #b67f44 100%);
+	padding: 7px 33px;
+	border-radius: 59px;
+	width: 255px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.body-mobile-wrapper .product .product-button .btn-action {
+	color: var(--secondary-color);
+	font-family: 'SVN-Gilroy Regular';
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 17px;
+	text-decoration: none;
+}
+
+/* Slide mặc định nhỏ lại */
+.product-item-swiper .swiper-slide {
+	transform: scale(0.3);
+	transition: transform 0.5s ease, opacity 0.5s ease;
+	/* opacity: 0.5; */
+}
+
+/* Slide đang active to ra */
+.product-item-swiper .swiper-slide-active {
+	transform: scale(1);
+	opacity: 1;
+	z-index: 2;
+	width: 100%;
+}
+
+/* Đảm bảo 2 bên không bị cắt */
+.product-item-swiper {
+	overflow: visible;
+}
+
+/* Register */
+.body-mobile-wrapper .register {
+	padding-top: 20px;
+	padding-bottom: 0px;
+	position: relative;
+	/* overflow: hidden; */ /* để ảnh tràn không lấn ra ngoài */
+	z-index: 1;
+}
+
+.body-mobile-wrapper .register .register-content {
+	background: linear-gradient(90deg, #f9c894 0%, #b67f44 50%, #71452a 100%);
+	padding: 20px;
+	position: relative;
+	/* overflow: hidden; */
+	z-index: 1;
+	border-radius: 20px;
+	overflow: visible;
+}
+
+.body-mobile-wrapper .register .register-content::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: url('/images/register/register-bg1.png') no-repeat center / cover;
+	z-index: -1;
+	border-radius: 20px;
+}
+
+.body-mobile-wrapper .register .register-content::after {
+	/* content: ''; */
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 28%;
+	height: 100%;
+	background: url('/images/register/register-bg2.png') no-repeat center / cover;
+	z-index: -1;
+}
+
+.body-mobile-wrapper .register .register-content .register-title-left {
+	font-family: 'SVN-Gilroy Bold';
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 32px;
+	text-align: center;
+	letter-spacing: 0;
+	color: var(--secondary-color);
+	margin-top: 15px;
+}
+
+.body-mobile-wrapper .register .register-content .register-title-left span {
+	text-transform: uppercase;
+}
+
+.body-mobile-wrapper .register .register-content .register-form {
+	padding-top: 20px;
+	overflow: visible;
+}
+
+.body-mobile-wrapper .register .register-content .register-form .form-group {
+	margin-bottom: 15px;
+}
+
+.body-mobile-wrapper .register .register-content .register-form .form-group input,
+.body-mobile-wrapper .register .register-content .register-form .form-group select,
+.body-mobile-wrapper .register .register-content .register-form .form-group .nice-select {
+	width: 100%;
+	height: 39px;
+	border-radius: 59px;
+	border: 1px solid #e6e6ef;
+	padding: 0 20px;
+}
+
+.body-mobile-wrapper .register .register-content .register-form .form-group select {
+	font-family: 'SVN-Gilroy Regular';
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 15px;
+	letter-spacing: 0;
+}
+
+.body-mobile-wrapper .register .register-content .register-form .form-group select option {
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
+	font-family: 'SVN-Gilroy Regular';
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 15px;
+	letter-spacing: 0;
+}
+
+.body-mobile-wrapper .register .register-content .register-form .form-group input::placeholder {
+	font-family: 'SVN-Gilroy Regular';
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 15px;
+	letter-spacing: 0;
+	color: #727272;
+}
+
+.body-mobile-wrapper .register .register-content .register-form .btn-register {
+	text-align: center;
+	background: linear-gradient(90deg, #71452a 0%, #b67f44 100%);
+	padding: 7px 33px;
+	border-radius: 59px;
+	width: 207px;
+	margin: 0 auto;
+	display: block;
+	border: 1px solid #ffff;
+}
+
+.body-mobile-wrapper .register .register-content .register-form .btn-register .btn-action {
+	color: var(--secondary-color);
+	font-family: 'SVN-Gilroy Regular';
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 17px;
+}
+
+.body-mobile-wrapper .register .register-content .register-title-right {
+	font-family: 'SVN-Gilroy Bold';
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.2;
+	text-align: center;
+	letter-spacing: 0;
+	color: var(--secondary-color);
+	text-transform: uppercase;
+	margin-top: 30px;
+}
+
+.body-mobile-wrapper .register .register-content .register-time {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+
+.body-mobile-wrapper .register .register-content .register-time .register-time-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.body-mobile-wrapper .register .register-content .register-time .register-time-item-title-number {
+	padding: 15px 15px;
+	background-color: var(--secondary-color);
+	border-radius: 9px;
+	box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
+	width: 91px;
+	text-align: center;
+}
+
+.body-mobile-wrapper
+	.register
+	.register-content
+	.register-time
+	.register-time-item-title-number
+	span {
+	font-family: 'SVN-Gilroy Bold';
+	font-size: 45px;
+	font-weight: 700;
+	line-height: 57px;
+	text-align: center;
+	letter-spacing: 0;
+
+	/* Gradient cho text */
+	background: linear-gradient(360deg, #d78350 0%, #71452a 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* Dành cho trình duyợt hỗ trợ chuẩn */
+	background-clip: text;
+	color: transparent;
+}
+
+.body-mobile-wrapper .register .register-content .register-time .register-time-item-title-text {
+	font-family: 'SVN-Gilroy Regular';
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 42px;
+	letter-spacing: 0;
+	color: var(--secondary-color);
+}
+
+/* QA */
+.body-mobile-wrapper .qa {
+	padding-top: 40px;
+	padding-bottom: 50px;
+	position: relative;
+	overflow: hidden; /* để ảnh tràn không lấn ra ngoài */
+	/* z-index: 1; */
+}
+
+.body-mobile-wrapper .qa .title-text {
+	font-family: 'SVN-Gilroy Bold';
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.2;
+	text-align: center;
+	letter-spacing: 0;
+	background: var(--primary-color);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* Dành cho trình duyợt hỗ trợ chuẩn */
+	background-clip: text;
+	color: transparent;
+	margin-bottom: 20px;
+}
+
+/* Footer */
+.body-mobile-wrapper .footer {
+	padding-top: 20px;
+	/* padding-bottom: 40px; */
+	position: relative;
+	overflow: hidden; /* để ảnh tràn không lấn ra ngoài */
+	z-index: 1;
+	background-color: #242421;
+	border-top-right-radius: 40px;
+	border-top-left-radius: 40px;
+	color: var(--secondary-color);
+}
+
+.body-mobile-wrapper .footer .footer-content {
+	padding: 40px 20px;
+	/* display: flex; */
+	/* justify-content: space-between; */
+	/* align-items: flex-end; */
+	/* gap: 40px; */
+}
+
+.body-mobile-wrapper .footer .footer-left {
+	width: 100%;
+}
+
+.body-mobile-wrapper .footer .footer-left .footer-left-content {
+	/* display: flex; */
+	/* justify-content: space-between; */
+	/* align-items: flex-end; */
+	/* gap: 40px; */
+	padding-bottom: 30px;
+	border-bottom: 1px solid #ffffff;
+}
+
+.body-mobile-wrapper .footer .footer-left .footer-left-content .footer-info-logo img {
+	width: auto;
+	height: auto;
+}
+
+.body-mobile-wrapper .footer .footer-left .footer-left-content .footer-info-content {
+	font-family: 'SVN-Gilroy Medium';
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.2;
+	letter-spacing: 0;
+}
+
+.body-mobile-wrapper .footer .footer-left .footer-left-content .footer-info-content-title {
+	font-family: 'SVN-Gilroy SemiBold';
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1.2;
+	letter-spacing: 0;
+	margin-bottom: 20px;
+	/* margin-top: 30px; */
+}
+
+.body-mobile-wrapper .footer .footer-left .footer-contact .footer-contact-title {
+	font-family: 'SVN-Gilroy SemiBold';
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 1.2;
+	letter-spacing: 0;
+	margin-bottom: 20px;
+	margin-top: 30px;
+}
+
+.body-mobile-wrapper .footer .footer-left .footer-contact .footer-contact-content {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.body-mobile-wrapper
+	.footer
+	.footer-left
+	.footer-contact
+	.footer-contact-content
+	.footer-contact-content-item {
+	font-family: 'SVN-Gilroy Medium';
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1;
+	letter-spacing: 0;
+	color: #969696;
+}
+
+.body-mobile-wrapper .footer .footer-left .footer-contact .footer-contact-social {
+	display: flex;
+	gap: 13px;
+	margin-top: 20px;
+}
+
+.body-mobile-wrapper .footer .footer-left .footer-bottom {
+	margin-top: 25px;
+}
+
+.body-mobile-wrapper .footer .footer-left .footer-bottom .footer-bottom-content {
+	/* display: flex; */
+	/* justify-content: space-between; */
+	/* text-align: center; */
+}
+
+.body-mobile-wrapper
+	.footer
+	.footer-left
+	.footer-bottom
+	.footer-bottom-content
+	.footer-bottom-content-item {
+	font-family: 'SVN-Gilroy Medium';
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 1.2;
+	letter-spacing: 0;
+	color: #969696;
+	text-align: justify;
+}
+
+.body-mobile-wrapper .footer .footer-right {
+	width: 100%;
+	margin-top: 20px;
+}
+
+.nice-select{
+	position: relative;
+	width: 100%;
+	cursor: pointer;
+	margin-bottom: 15px;
+}
+
+.body-mobile-wrapper .register .register-content .register-form .form-group .nice-select .selected {
+	background: #fff;
+	padding: 12px 18px;
+	border: 1px solid #ddd;
+}
+
+.body-default-wrapper .nice-select .option.selected {
+	background: #FFF7EE !important;
+	border: 1px solid #B67F44 !important;
+	border-radius: 60px !important;
+	color: #1A1A1A !important;
+	font-family: 'SVN-Gilroy SemiBold' !important;
+	font-size: 20px !important;
+	font-weight: 600 !important;
+	letter-spacing: 0 !important;
+	overflow: hidden !important;
+}
+.body-default-wrapper .nice-select .list {
+	border-radius: 12px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	border-radius: 19px !important;
+	padding: 3px !important;
+	font-family: 'SVN-Gilroy Regular' !important;
+	font-size: 20px !important;
+	font-weight: 400 !important;
+	letter-spacing: 0 !important;
+	color: #484848 !important;
+}
+.body-default-wrapper .nice-select .option {
+	font-family: 'SVN-Gilroy Regular' !important;
+	font-size: 20px !important;
+	font-weight: 400 !important;
+	letter-spacing: 0 !important;
+	color: #484848 !important;
+	white-space: normal;
+	line-height: 19px !important;
+	padding: 10px 20px !important;
+}
+.body-default-wrapper .nice-select .current {
+	font-family: 'SVN-Gilroy Regular' !important;
+	font-size: 20px !important;
+	font-weight: 400 !important;
+	letter-spacing: 0 !important;
+	color: #000000 !important;
+	white-space: nowrap !important;
+	line-height: 50px !important;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.body-mobile-wrapper .nice-select .option.selected {
+	background: #FFF7EE !important;
+	border: 1px solid #B67F44 !important;
+	border-radius: 60px !important;
+	color: #1A1A1A !important;
+	font-family: 'SVN-Gilroy SemiBold' !important;
+	font-size: 12px !important;
+	font-weight: 600 !important;
+	letter-spacing: 0 !important;
+	overflow: hidden !important;
+}
+.body-mobile-wrapper .nice-select .list {
+	border-radius: 19px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	border-radius: 19px !important;
+	padding: 3px !important;
+	font-family: 'SVN-Gilroy Regular' !important;
+	font-size: 12px !important;
+	font-weight: 400 !important;
+	letter-spacing: 0 !important;
+	color: #484848 !important;
+}
+.body-mobile-wrapper .nice-select .option {
+	font-family: 'SVN-Gilroy Regular' !important;
+	font-size: 12px !important;
+	font-weight: 400 !important;
+	letter-spacing: 0 !important;
+	color: #484848 !important;
+	white-space: normal;
+	line-height: 16px !important;
+	padding: 10px 20px !important;
+}
+.body-mobile-wrapper .nice-select .current {
+	font-family: 'SVN-Gilroy Regular' !important;
+	font-size: 12px !important;
+	font-weight: 400 !important;
+	letter-spacing: 0 !important;
+	color: #000000 !important;
+	white-space: nowrap !important;
+	line-height: 35px !important;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+/* Mobile menu */
+.body-mobile-wrapper .menu-mobile {
+	/* display: none; */
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 85%;
+	background-color: var(--secondary-color);
+	z-index: 1000;
+	transform: translateX(-100%);
+	transition: transform 0.3s ease;
+	padding: 50px 20px;
+
+}
+
+.body-mobile-wrapper .menu-mobile.active {
+	transform: translateX(0);
+}
+
+.body-mobile-wrapper .menu-mobile ul {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	padding-top: 20px;
+}
+
+.body-mobile-wrapper .menu-mobile ul li {
+	padding: 10px 0;
+	border-bottom: 1px solid #000000;
+}
+
+.body-mobile-wrapper .menu-mobile ul li a {
+	font-family: 'SVN-Gilroy Medium';
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.5;
+	text-decoration: none;
+	color: #242421;
+	text-transform: capitalize;
+	display: block;
+}
+
+.body-mobile-wrapper .menu-mobile-overlay {
+	display: none;
+	/* display: block; */
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 999;
+}
+
+.body-mobile-wrapper .menu-mobile-overlay.active {
+	display: block;
+}
+
+.error {
+	color: #930a0a;
+	font-size: 12px;
+	padding-left: 20px;
+}
+
+#modal-success .modal-dialog {
+	--border-width: 2px;
+	border-radius: 20px;
+	background: linear-gradient(to right, #00714B, #ACD253);
+	padding: var(--border-width);
+}
+
+#modal-success .modal-content {
+	border-radius: 20px !important;
+	text-align: center;
+}
+
+#modal-success .modal-body {
+	padding: 50px 30px !important;
+}
+
+@media (max-width: 768px) {
+	#modal-success .modal-body {
+		padding: 30px 20px !important;
+	}
+}
+
+#modal-success .notify-contact-us-content {
+	text-align: center;
+	padding: 50px 30px;
+}
+
+#modal-success .title-notify-contact-us {
+	font-family: 'SVN-Gilroy SemiBold';
+	font-size: 26px;
+	font-weight: 600;
+	color: #000000;
+	line-height: 36px;
+	letter-spacing: 0;
+	margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+	#modal-success .title-notify-contact-us {
+		font-size: 20px;
+		line-height: 25px;
+	}
+}
+
+#modal-success .description-notify-contact-us {
+	font-family: 'SVN-Gilroy Regular';
+	font-size: 20px;
+	font-weight: 400;
+	color: #000000;
+	line-height: 25px;
+	letter-spacing: 0;
+	margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+	#modal-success .description-notify-contact-us {
+		font-size: 12px;
+		line-height: 15px;
+	}
+}
+
+#modal-success .contact-us-content {
+	font-family: 'SVN-Gilroy SemiBold';
+	font-size: 20px;
+	font-weight: 600;
+	color: #000000;
+	line-height: 31px;
+	letter-spacing: 0;
+	margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+	#modal-success .contact-us-content {
+		font-size: 16px;
+		line-height: 20px;
+	}
+}
+
+#modal-success .button-success {
+	text-align: center;
+	background: linear-gradient(90deg, #ACD253 0%, #00714B 100%);
+	padding: 16px 40px;
+	border-radius: 59px;
+	width: 572px;
+	margin: 0 auto;
+	margin-top: 20px;
+	text-decoration: none;
+	display: block;
+}
+
+@media (max-width: 768px) {
+	#modal-success .button-success {
+		width: 100%;
+		padding: 12px 22px;
+		border-radius: 20px;
+	}
+}
+
+#modal-success .button-success .btn-action-success {
+	font-family: 'SVN-Gilroy SemiBold';
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 25px;
+	text-decoration: none;
+	color: #FFFFFF;
+	letter-spacing: 0;
+}
+
+@media (max-width: 768px) {
+	#modal-success .button-success .btn-action-success {
+		font-size: 16px;
+		line-height: 17px;
+	}
+}
+
+#modal-success .button-success:hover {
+	background: #fff;
+	border: 1px solid #00714B;
+}
+
+#modal-success .button-success:hover .btn-action-success {
+	color: #000000;
+}
