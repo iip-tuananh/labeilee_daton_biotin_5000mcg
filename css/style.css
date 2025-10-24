@@ -162,7 +162,7 @@ body {
 }
 
 .body-default-wrapper .problem .problem-content {
-	padding: 0 180px;
+	padding: 0 158px;
 }
 
 @media (max-width: 1560px) {
@@ -179,7 +179,7 @@ body {
 
 .body-default-wrapper .problem .problem-content .title-text {
 	font-family: 'SVN-Gilroy Bold';
-	font-size: 64px;
+	font-size: 56px;
 	font-weight: 700;
 	line-height: 1.2;
 	text-align: center;
@@ -376,7 +376,7 @@ body {
 
 .body-default-wrapper .solution .title-text {
 	font-family: 'SVN-Gilroy Bold';
-	font-size: 64px;
+	font-size: 56px;
 	font-weight: 700;
 	line-height: 1.2;
 	text-align: center;
@@ -433,7 +433,7 @@ body {
 
 .body-default-wrapper .solution .solution-item .solution-item-description {
 	font-family: 'SVN-Gilroy Regular';
-	font-size: 20px;
+	font-size: 19px;
 	font-weight: 400;
 	line-height: 25px;
 	text-align: center;
@@ -441,12 +441,12 @@ body {
 }
 
 .body-default-wrapper .solution .solution-image {
-	padding: 0 180px;
+	padding: 0 158px;
 }
 
 .body-default-wrapper .solution .solution-image .title-text {
 	font-family: 'SVN-Gilroy SemiBold';
-	font-size: 64px;
+	font-size: 56px;
 	font-weight: 600;
 	line-height: 1.2;
 	text-align: center;
@@ -478,21 +478,21 @@ body {
 	position: absolute;
 	bottom: 60px;
 	right: 25px;
-	width: 446px;
+	width: 38%;
 }
 @media (max-width: 1560px) {
 	.body-default-wrapper .solution .solution-image .solution-image-content .solution-image-description {
-		/* width: 342px !important; */
+		width: 37%;
 		bottom: 38px !important;
-		right: -64px !important;
+		/* right: -64px !important; */
 	}
 }
 
 @media (max-width: 1400px) {
 	.body-default-wrapper .solution .solution-image .solution-image-content .solution-image-description {
-		bottom: 15px !important;
-		right: -45px !important;
-		width: 342px !important;
+		bottom: 9px !important;
+		/* right: -45px !important; */
+		width: 37%;
 	}
 }
 
@@ -540,7 +540,7 @@ body {
 
 .body-default-wrapper .course .title-text {
 	font-family: 'SVN-Gilroy Bold';
-	font-size: 64px;
+	font-size: 56px;
 	font-weight: 700;
 	line-height: 1.2;
 	text-align: center;
@@ -557,13 +557,13 @@ body {
 
 .body-default-wrapper .course .title-text span {
 	font-family: 'SVN-Gilroy SemiBold';
-	font-size: 64px;
+	font-size: 56px;
 	font-weight: 600;
 	line-height: 1.2;
 }
 
 .body-default-wrapper .course .course-content {
-	padding: 0 180px;
+	padding: 0 158px;
 }
 
 @media (max-width: 1560px) {
@@ -624,7 +624,7 @@ body {
 
 .body-default-wrapper .feedback .title-text {
 	font-family: 'SVN-Gilroy Bold';
-	font-size: 64px;
+	font-size: 56px;
 	font-weight: 700;
 	line-height: 1.2;
 	text-align: center;
@@ -674,7 +674,7 @@ body {
 
 .body-default-wrapper .feedback .feedback-content .feedback-item-content .feedback-item-title {
 	font-family: 'SVN-Gilroy SemiBold';
-	font-size: 36px;
+	font-size: 33px;
 	font-weight: 600;
 	line-height: 31px;
 	text-align: center;
@@ -743,7 +743,7 @@ body {
 }
 .body-default-wrapper .quality .title-text {
 	font-family: 'SVN-Gilroy Bold';
-	font-size: 64px;
+	font-size: 56px;
 	font-weight: 700;
 	line-height: 1.2;
 	text-align: center;
@@ -823,7 +823,7 @@ body {
 
 .body-default-wrapper .product .title-text {
 	font-family: 'SVN-Gilroy Bold';
-	font-size: 64px;
+	font-size: 56px;
 	font-weight: 700;
 	line-height: 1.2;
 	text-align: center;
@@ -893,9 +893,9 @@ body {
 .body-default-wrapper .register {
 	padding-top: 20px;
 	padding-bottom: 40px;
-	position: relative;
-	overflow: hidden; /* để ảnh tràn không lấn ra ngoài */
-	z-index: 1;
+	/* position: relative; */
+	/* overflow: hidden; */ /* để ảnh tràn không lấn ra ngoài */
+	/* z-index: 1; */
 }
 
 .body-default-wrapper .register .register-content {
@@ -993,7 +993,7 @@ body {
 
 .body-default-wrapper .register .register-content .register-form .form-group input::placeholder {
 	font-family: 'SVN-Gilroy Regular';
-	font-size: 20px;
+	font-size: 17px;
 	font-weight: 400;
 	line-height: 25px;
 	letter-spacing: 0;
@@ -1021,7 +1021,7 @@ body {
 
 .body-default-wrapper .register .register-content .register-title-right {
 	font-family: 'SVN-Gilroy Bold';
-	font-size: 48px;
+	font-size: 46px;
 	font-weight: 700;
 	line-height: 57px;
 	text-align: center;
@@ -1101,7 +1101,7 @@ body {
 
 .body-default-wrapper .qa .title-text {
 	font-family: 'SVN-Gilroy Bold';
-	font-size: 64px;
+	font-size: 56px;
 	font-weight: 700;
 	line-height: 1.2;
 	text-align: center;
@@ -1199,6 +1199,21 @@ body {
 	line-height: 1;
 	letter-spacing: 0;
 	color: #969696;
+}
+
+.body-default-wrapper
+	.footer
+	.footer-left
+	.footer-contact
+	.footer-contact-content
+	.footer-contact-content-item a {
+	font-family: 'SVN-Gilroy Medium';
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1;
+	letter-spacing: 0;
+	color: #969696;
+	text-decoration: none;
 }
 
 .body-default-wrapper .footer .footer-left .footer-contact .footer-contact-social {
@@ -2183,6 +2198,21 @@ body {
 	color: #969696;
 }
 
+.body-mobile-wrapper
+	.footer
+	.footer-left
+	.footer-contact
+	.footer-contact-content
+	.footer-contact-content-item a {
+	font-family: 'SVN-Gilroy Medium';
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1;
+	letter-spacing: 0;
+	color: #969696;
+	text-decoration: none;
+}
+
 .body-mobile-wrapper .footer .footer-left .footer-contact .footer-contact-social {
 	display: flex;
 	gap: 13px;
@@ -2267,7 +2297,7 @@ body {
 }
 .body-default-wrapper .nice-select .current {
 	font-family: 'SVN-Gilroy Regular' !important;
-	font-size: 20px !important;
+	font-size: 17px !important;
 	font-weight: 400 !important;
 	letter-spacing: 0 !important;
 	color: #000000 !important;
