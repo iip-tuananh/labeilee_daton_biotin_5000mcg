@@ -1863,9 +1863,9 @@ body {
 .body-mobile-wrapper .product .product-button {
 	text-align: center;
 	background: linear-gradient(90deg, #71452a 0%, #b67f44 100%);
-	padding: 7px 33px;
+	padding: 7px 26px;
 	border-radius: 59px;
-	width: 255px;
+	width: 260px;
 	margin: 0 auto;
 	margin-top: 30px;
 }
@@ -2006,7 +2006,7 @@ body {
 .body-mobile-wrapper .register .register-content .register-form .btn-register {
 	text-align: center;
 	background: linear-gradient(90deg, #71452a 0%, #b67f44 100%);
-	padding: 7px 33px;
+	padding: 7px 26px;
 	border-radius: 59px;
 	width: 207px;
 	margin: 0 auto;
