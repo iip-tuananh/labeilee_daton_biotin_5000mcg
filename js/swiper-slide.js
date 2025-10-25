@@ -12,10 +12,10 @@ var swiper = new Swiper('.feedback-swiper', {
     fadeEffect: {
         crossFade: true,
     },
-    // pagination: {
-    //     el: '.swiper-pagination',
-    //     clickable: true,
-    // },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
 });
 
 var swiper = new Swiper('.feedback-phone-swiper', {
@@ -28,6 +28,10 @@ var swiper = new Swiper('.feedback-phone-swiper', {
         disableOnInteraction: false,
     },
     speed: 1000,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
 });
 
 var swiper = new Swiper('.product-item-swiper', {
@@ -41,6 +45,10 @@ var swiper = new Swiper('.product-item-swiper', {
     },
     speed: 1000,
     lazy: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
 });
 
 var swiper = new Swiper('.qa-item-swiper', {
@@ -54,4 +62,8 @@ var swiper = new Swiper('.qa-item-swiper', {
     },
     speed: 1000,
     lazy: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
 });
