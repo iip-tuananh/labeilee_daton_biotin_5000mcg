@@ -2005,6 +2005,7 @@ ease-in-out infinite;
 	border-radius: 59px;
 	border: 1px solid #e6e6ef;
 	padding: 0 20px;
+	font-size: 13px;
 }
 
 .body-mobile-wrapper .register .register-content .register-form .form-group select {
